@@ -458,11 +458,11 @@ def print_memory_usage(sorted_cmds, shareds, count, total):
                          ("-" * 33, " " * 24, human(total), "=" * 33))
 
 def verify_environment():
-    if os.geteuid() != 0:
-        sys.stderr.write("Sorry, root permission required.\n")
-        if __name__ == '__main__':
-            sys.stderr.close()
-            sys.exit(1)
+#    if os.geteuid() != 0:
+#        sys.stderr.write("Sorry, root permission required.\n")
+#        if __name__ == '__main__':
+#            sys.stderr.close()
+#            sys.exit(1)
 
     try:
         kv = kernel_ver()
